@@ -7,4 +7,3 @@ matrix:
       jdk: openjdk15
 script:
   - ./installClean.sh
-  - ./deployRelease.sh
