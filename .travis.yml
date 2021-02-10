@@ -1,0 +1,13 @@
+dist: focal
+arch:
+  - amd64
+  - ppc64le
+language: java
+matrix:
+  include:
+    - jdk: openjdk8
+    - jdk: openjdk11
+    - jdk: openjdk15
+script:
+  - ./installClean.sh
+  - ./deployRelease.sh
